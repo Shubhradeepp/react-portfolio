@@ -4,8 +4,8 @@
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
-  box-shadow: 0 16px 14px 0 #04152d;
+  background: linear-gradient(180deg, #06402B 0%, rgb(0,0,33) 100%);
+  box-shadow: 0 16px 14px 0 #051935;
   padding: 18px 24px;
   max-width: 345px;
 }
@@ -17,11 +17,16 @@
 .title {
   font-size: 25px;
   font-weight: 700;
+
+  background-color: var(--color-dark); /* Yellowackground */
+  padding: 10px 20px; 
+  border-radius: 8px; /* Rounded corners for a softer look */
+  
 }
 
 .description {
   margin-top: 6px;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 400;
 }
 
@@ -36,10 +41,10 @@
 }
 
 .skill {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 400;
   border-radius: 100px;
-  background: var(--color-dark);
+  background: var(--color-primary);
   padding: 2px 22px;
 }
 
@@ -53,9 +58,9 @@
 .link {
   text-decoration: none;
   color: var(--color-text);
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 600;
   border-radius: 100px;
-  background: var(--color-primary);
+  background: var(--color-secondary);
   padding: 1px 22px;
 }

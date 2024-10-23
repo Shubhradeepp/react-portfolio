@@ -1,26 +1,26 @@
 [
   {
-    "title": "Project A",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "title": "AI Chatbot",
+    "imageSrc": "projects/ai.jpeg",
+    "description": "Developed an intelligent conversational interface that delivers personalized responses and generates custom content, making every interaction uniquely engaging.",
+    "skills": ["Gemini (AI model/API)", "Express", "Node", "AWS", "Postman"],
+    "demo": "https://ai-chatbot-ow5v.onrender.com/",
+    "source": "https://github.com/Shubhradeepp/Ai-Chatbot"
   },
   {
-    "title": "Project B",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "title": "e-Voting System",
+    "imageSrc": "projects/vote.jpeg",
+    "description": "A secure and transparent digital democracy platform that revolutionizes the voting process with robust authentication and seamless user experience.",
+    "skills": ["Express", "Node", "JWT", "REST API","MVC", "Passport.js" ],
+    "demo": "https://github.com/Shubhradeepp/e-Voting-System",
+    "source": "https://github.com/Shubhradeepp/e-Voting-System"
   },
   {
-    "title": "Project C",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
+    "title": "MemeStream",
+    "imageSrc": "projects/meme.png",
+    "description": "Your pocket-sized entertainment hub that delivers endless laughter with fresh memes at your fingertips, ready to share with friends instantly.",
+    "skills": ["Kotlin", "Android Development", "API"],
+    "demo": "https://www.linkedin.com/posts/shubhradeepp_app-project-kotlin-activity-7019343404551548928-rsI7/?utm_source=share&utm_medium=member_desktop",
     "source": "https://www.github.com"
   }
 ]

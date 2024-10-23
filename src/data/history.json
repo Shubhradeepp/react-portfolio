@@ -1,29 +1,29 @@
 [
   {
-    "role": "Software Engineer",
-    "organisation": "Google",
-    "startDate": "Sept, 2022",
+    "role": "SDE Intern",
+    "organisation": "Bluestock Fintech",
+    "startDate": "Aug, 2024",
     "endDate": "Present",
-    "experiences": ["Worked on Google Maps", "Reduced load times by 50%"],
-    "imageSrc": "history/google.png"
+    "experiences": ["Assisted in developing FinTech web app supporting 250+ active users", "Tech stack: React, Node.js, Express.js, Context API, Redux, RESTful APIs"],
+    "imageSrc": "history/blu.jpeg"
   },
   {
-    "role": "UI Designer",
-    "organisation": "Mirosoft",
-    "startDate": "Aug, 2021",
-    "endDate": "Aug, 2022",
-    "experiences": ["Worked on Windows 11", "Designed the control panel"],
-    "imageSrc": "history/microsoft.png"
+    "role": "Software Engineering Expertise for AI Training",
+    "organisation": "Outlier",
+    "startDate": "Jun, 2024",
+    "endDate": "Present",
+    "experiences": ["Contributed to training generative AI models and evaluating AI-generated code", "Tech stack: Django, Python, and C++"],
+    "imageSrc": "history/out.jpeg"
   },
   {
-    "role": "SWE Intern",
-    "organisation": "Netflix",
-    "startDate": "Apr, 2020",
-    "endDate": "Jun, 2020",
+    "role": "Data Analyst Intern",
+    "organisation": "Mentorness",
+    "startDate": "Feb, 2024",
+    "endDate": "Apr, 2024",
     "experiences": [
-      "Worked on component library",
-      "Helped create UI components"
+      "Engineered SQL database for guest data management and created Power BI dashboards for sales analysis",
+      "Tech stack: SQL, Power BI"
     ],
-    "imageSrc": "history/netflix.png"
+    "imageSrc": "history/ment.jpeg"
   }
 ]

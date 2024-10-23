@@ -7,17 +7,20 @@ export const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <h1 className={styles.title}>Hi, I'm Ada</h1>
+        <h1 className={styles.title}>Hi, I'm Shubhradeep</h1>
         <p className={styles.description}>
-          I'm a full-stack developer with 5 years of experience using React and
-          NodeJS. Reach out if you'd like to learn more!
+         <h3 style={{ margin: '10px 0',textShadow: '0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(0, 0, 255, 0.6)' }}>
+      Software Developer
+    </h3>
+         I Build Smart Solutions for Real Problems
+          or Bringing Ideas to Life Through Code & Creativity
         </p>
         <a href="mailto:myemail@email.com" className={styles.contactBtn}>
           Contact Me
         </a>
       </div>
       <img
-        src={getImageUrl("hero/heroImage.png")}
+        src={getImageUrl("hero/link-c.jpeg")}
         alt="Hero image of me"
         className={styles.heroImg}
       />
