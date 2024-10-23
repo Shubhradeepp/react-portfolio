@@ -15,7 +15,7 @@ export const Hero = () => {
          I Build Smart Solutions for Real Problems
           or Bringing Ideas to Life Through Code & Creativity
         </p>
-        <a href="mailto:myemail@email.com" className={styles.contactBtn}>
+        <a href="mailto:shubhradeepmaity3@email.com" className={styles.contactBtn}>
           Contact Me
         </a>
       </div>
