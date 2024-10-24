@@ -26,6 +26,7 @@ export const Experience = () => {
           {history.map((historyItem, id) => {
             return (
               <li key={id} className={styles.historyItem}>
+                <div className="style.expbox">
                 <img
                   src={getImageUrl(historyItem.imageSrc)}
                   alt={`${historyItem.organisation} Logo`}
@@ -41,6 +42,7 @@ export const Experience = () => {
                       return <li  key={id}>{experience}</li>;
                     })}
                   </ul>
+                </div>
                 </div>
               </li>
             );
