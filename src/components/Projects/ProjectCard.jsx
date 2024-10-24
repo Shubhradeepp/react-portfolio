@@ -25,10 +25,11 @@ export const ProjectCard = ({
         })}
       </ul>
       <div className={styles.links}>
+        {title !== "e-Voting System" &&
         <a href={demo} className={styles.link}>
           Demo
-        </a>
-        {title !== "MemeStream" && title !== "e-Voting System"  && ( // Only render if ID is not 3
+        </a>}
+        {title !== "MemeStream"  && ( // Only render if ID is not 3
                     <a href={source} className={styles.link}>
                         Source
                     </a>

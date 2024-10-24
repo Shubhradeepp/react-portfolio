@@ -19,8 +19,17 @@
     "imageSrc": "skills/react.png"
   },
   {
+    "title": "Django",
+    "imageSrc": "skills/dj.png"
+  },
+  {
     "title": "Python",
     "imageSrc": "skills/python.png"
+  },
+  
+  {
+    "title": "PostgreSQL",
+    "imageSrc": "skills/sql.png"
   },
   {
     "title": "HTML",
@@ -34,22 +43,21 @@
     "title": "Tailwind CSS",
     "imageSrc": "skills/Tailwind CSS.png"
   },
-  
-  {
-    "title": "Django",
-    "imageSrc": "skills/dj.png"
-  },
-  {
-    "title": "PostgreSQL",
-    "imageSrc": "skills/sql.png"
-  },
   {
     "title": "C++",
     "imageSrc": "skills/C++.png"
   },
   {
-    "title": "git",
+    "title": "Git",
     "imageSrc": "skills/Git.png"
+  },
+  {
+    "title": "Kotlin",
+    "imageSrc": "skills/Kotlin.png"
+  },
+  {
+    "title": "Redux",
+    "imageSrc": "skills/Redux.png"
   },
   {
     "title": "Postman",

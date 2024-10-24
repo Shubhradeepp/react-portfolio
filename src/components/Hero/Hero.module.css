@@ -9,7 +9,7 @@
   z-index: 1;
   margin-left: 10%;
   margin-right: 10%;
-  padding: 0 px 20px;
+ 
 }
 
 .content {
@@ -32,14 +32,14 @@
   );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-
+  
 }
 
 .description {
   font-size: 30px;
   font-family: var(--font-roboto);
   margin-bottom: 52px;
-  padding: 1px 5px;
+  padding: 1px 20px;
 }
 
 .contactBtn {
