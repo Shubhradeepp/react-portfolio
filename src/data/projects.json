@@ -11,7 +11,7 @@
     "title": "e-Voting System",
     "imageSrc": "projects/vote.jpeg",
     "description": "A secure and transparent digital democracy platform that revolutionizes the voting process with robust authentication and seamless user experience.",
-    "skills": ["Express", "Node", "JWT", "REST API","MVC", "Passport.js" ],
+    "skills": ["Express", "MongodB", "JWT", "REST API","MVC", "Passport.js" ],
     "demo": "https://github.com/Shubhradeepp/e-Voting-System",
     "source": "https://github.com/Shubhradeepp/e-Voting-System"
   },
