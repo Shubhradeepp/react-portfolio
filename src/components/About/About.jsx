@@ -17,9 +17,9 @@ export const About = () => {
           <li className={styles.aboutItem}>
             <img src={getImageUrl("about/serverIcon.png")} alt="Cursor icon" />
             <div className={styles.aboutItemText}>
-              <h3 style={{ color: "#E535AB" }}>Backend Developer</h3>
+              <h3 style={{ color: "#E535AB" }}>Backend Brilliance</h3>
               <p>
-              Building fast, optimized back-end systems and RESTful APIs that power secure, scalable applications
+              Engineering lightning-fast backend systems and RESTful APIs that handle millions of requests with ease. Creating secure, optimized server architectures that power the next generation of web applications.
                 
               </p>
             </div>
@@ -27,9 +27,9 @@ export const About = () => {
           <li className={styles.aboutItem}>
             <img src={getImageUrl("about/cursorIcon.png")} alt="Server icon" />
             <div className={styles.aboutItemText}>
-              <h3 style={{ color: "#E535AB" }}>Frontend Developer</h3>
+              <h3 style={{ color: "#E535AB" }}>Frontend Mastery</h3>
               <p>
-              Crafting seamless, responsive user interfaces with React, ensuring dynamic and engaging web experiences.
+              Crafting pixel-perfect, responsive interfaces using React that not only look good but feel intuitive. I believe in creating experiences, not just interfaces.
               </p>
             </div>
           </li>
