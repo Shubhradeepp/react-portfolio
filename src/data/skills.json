@@ -4,6 +4,14 @@
     "imageSrc": "skills/js.png"
   },
   {
+    "title": "Java",
+    "imageSrc": "skills/Java.png"
+  },
+  {
+    "title": "Spring Boot",
+    "imageSrc": "skills/Spring.png"
+  },
+  {
     "title": "Node",
     "imageSrc": "skills/node.png"
   },

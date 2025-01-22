@@ -1,9 +1,25 @@
 [
   {
+    "role": "Full-Stack Developer",
+    "organisation": "SwingBell Labs",
+    "startDate": "Jan, 2025",
+    "endDate": "Present",
+    "experiences": ["Collaborating on the NHCX platform to simplify health insurance claim processing by connecting insurers,healthcare provider, policyholders", "Tech stack: Java, Spring Boot, Encryption, React, PostgreSQL, Cryptography"],
+    "imageSrc": "history/swingbell.jpg"
+  },
+  {
+    "role": "Backend Engineer",
+    "organisation": "Aryabhata Tech Pvt Ltd",
+    "startDate": "Dec, 2024",
+    "endDate": "Mar, 2025",
+    "experiences": ["Collaborated to build a platform connecting startup founders with potential investors to support funding opportunities.", "Tech stack: React, Node.js, Express.js, Data Modeling, MongoDB, RESTful APIs"],
+    "imageSrc": "history/arj.jpg"
+  },
+  {
     "role": "SDE Intern",
     "organisation": "Bluestock Fintech",
     "startDate": "Aug, 2024",
-    "endDate": "Present",
+    "endDate": "Dec, 2024",
     "experiences": ["Assisted in developing FinTech web app supporting 250+ active users", "Tech stack: React, Node.js, Express.js, Context API, Redux, RESTful APIs"],
     "imageSrc": "history/blu.jpeg"
   },
