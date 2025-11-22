@@ -1,10 +1,26 @@
 [
   {
+    "role": "System Engineer",
+    "organisation": "Caerus IT Consulting Pvt. Ltd",
+    "startDate": "Sept, 2025",
+    "endDate": "Present",
+    "experiences": [
+      "Led the development of a scalable HRMS platform with role-based access control, architecting the backend using Node.js, PostgreSQL, and RESTful APIs while also driving end-to-end UI development in React.",
+      "Implemented containerization using Docker and restructured the backend into microservices, improving scalability, maintainability, and deployment efficiency."
+    ],
+    "imageSrc": "history/caerus.jpeg"
+  },
+  {
     "role": "Full-Stack Developer",
     "organisation": "SwingBell Labs",
     "startDate": "Jan, 2025",
-    "endDate": "Present",
-    "experiences": ["Designed SEO-optimized doctor profiles boosting search visibility by 10%.","Enhanced subscription flows with Razorpay, improved user retention by 20%.", "Built Help & Support system, patient care booking module, and strengthened platform security with JWE encryption, leading to a more efficient and secure healthcare system.", "Tech stack: TypeScript, React, Java, Spring Boot, Encryption, PostgreSQL, Cryptography"],
+    "endDate": "Aug, 2025",
+    "experiences": [
+      "Designed SEO-optimized doctor profiles boosting search visibility by 10%.",
+      "Enhanced subscription flows with Razorpay, improved user retention by 20%.",
+      "Built Help & Support system, patient care booking module, and strengthened platform security with JWE encryption, leading to a more efficient and secure healthcare system.",
+      "Tech stack: TypeScript, React, Java, Spring Boot, Encryption, PostgreSQL, Cryptography"
+    ],
     "imageSrc": "history/swingbell.jpg"
   },
   {
@@ -12,7 +28,10 @@
     "organisation": "Aryabhata Tech Pvt Ltd",
     "startDate": "Dec, 2024",
     "endDate": "Mar, 2025",
-    "experiences": ["Collaborated to build a platform connecting startup founders with potential investors to support funding opportunities.", "Tech stack: React, Node.js, Express.js, Data Modeling, MongoDB, RESTful APIs"],
+    "experiences": [
+      "Collaborated to build a platform connecting startup founders with potential investors to support funding opportunities.",
+      "Tech stack: React, Node.js, Express.js, Data Modeling, MongoDB, RESTful APIs"
+    ],
     "imageSrc": "history/arj.jpg"
   },
   {
@@ -20,7 +39,10 @@
     "organisation": "Bluestock Fintech",
     "startDate": "Aug, 2024",
     "endDate": "Dec, 2024",
-    "experiences": ["Assisted in developing FinTech web app supporting 250+ active users", "Tech stack: React, Node.js, Express.js, Context API, Redux, RESTful APIs"],
+    "experiences": [
+      "Assisted in developing FinTech web app supporting 250+ active users",
+      "Tech stack: React, Node.js, Express.js, Context API, Redux, RESTful APIs"
+    ],
     "imageSrc": "history/blu.jpeg"
   },
   {
@@ -28,7 +50,10 @@
     "organisation": "Outlier",
     "startDate": "Jun, 2024",
     "endDate": "Present",
-    "experiences": ["Contributed to training generative AI models and evaluating AI-generated code", "Tech stack: Django, Python, and C++"],
+    "experiences": [
+      "Contributed to training generative AI models and evaluating AI-generated code",
+      "Tech stack: Django, Python, and C++"
+    ],
     "imageSrc": "history/out.jpeg"
   },
   {

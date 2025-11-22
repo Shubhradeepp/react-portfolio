@@ -30,18 +30,7 @@
     "title": "React",
     "imageSrc": "skills/react.png"
   },
-  {
-    "title": "Django",
-    "imageSrc": "skills/dj.png"
-  },
-  {
-    "title": "Python",
-    "imageSrc": "skills/python.png"
-  },
-  {
-    "title": "GoLang",
-    "imageSrc": "skills/Go.png"
-  },
+
   {
     "title": "PostgreSQL",
     "imageSrc": "skills/sql.png"
