@@ -64,3 +64,42 @@
   background: var(--color-secondary);
   padding: 1px 22px;
 }
+
+.link:hover {
+  background: var(--color-accent);
+
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.historyItemTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+
+  /* Mobile */
+@media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    padding: 14px 18px;
+  }
+
+  .title {
+    font-size: 20px;
+    padding: 8px 16px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .skill {
+    font-size: 18px;
+    padding: 2px 16px;
+  }
+
+  .link {
+    font-size: 20px;
+    padding: 1px 16px;
+  }
+}

@@ -62,3 +62,24 @@
     align-items: center;
   }
 }
+
+@media (max-width: 600px) { 
+  .container {
+    padding: 40px 5%;
+  }
+
+  .text h2 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .text p {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .link a {
+    font-size: 22px;
+  }
+  
+}

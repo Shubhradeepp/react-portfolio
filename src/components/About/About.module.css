@@ -90,3 +90,26 @@
     padding-right: 0;
   }
 }
+
+/* Mobile */
+@media (max-width: 600px) {
+  .container {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 30px;
+    margin-top: 80px;
+  }
+
+  .title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .aboutItem h3 {
+    font-size: 20px;
+  }
+
+  .aboutItem p {
+    font-size: 20px;
+  }
+}
