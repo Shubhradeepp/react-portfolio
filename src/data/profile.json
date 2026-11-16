@@ -1,13 +1,13 @@
 {
   "name": "Shubhradeep Maity",
   "role": "Full Stack Software Engineer",
-  "location": "Kolkata, India",
+  "location": "India",
   "email": "shubhradeepmaity3@gmail.com",
   "linkedin": "https://www.linkedin.com/in/shubhradeepp/",
   "github": "https://github.com/Shubhradeepp",
   "resume": "/Shubhradeep_Maity_Resume.pdf",
-  "photo": "/assets/hero/profile.webp",
-  "portrait": "/assets/about/portrait.webp",
+  "photo": "/assets/hero/about02.jpeg",
+  "portrait": "/assets/about/about.jpeg",
   "stats": [
     { "value": "2+", "label": "years building Java, Node.js and React applications" },
     { "value": "60%", "label": "less manual effort in payment reconciliation and retries" },

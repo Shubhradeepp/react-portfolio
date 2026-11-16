@@ -56,7 +56,7 @@
 
 .lead {
   padding-left: 18px;
-  border-left: 8px solid var(--red);
+  border-left: 8px solid var(--primary);
   font-family: var(--font-display);
   font-weight: 700;
   font-size: clamp(1.35rem, 3.2vw, 2rem);

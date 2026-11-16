@@ -17,14 +17,14 @@
   padding: 16px;
   border-bottom: var(--border) solid var(--ink);
   background: var(--tone);
-  color: #2b1a12;
+  color: var(--tone-ink);
 }
 
 .logo {
   width: 56px;
   height: 56px;
   border: var(--border) solid var(--ink);
-  background: #fff;
+  background: var(--white);
   object-fit: cover;
 }
 
@@ -81,7 +81,7 @@
   top: 0.5em;
   width: 11px;
   height: 11px;
-  background: var(--red);
+  background: var(--primary);
   border: 2px solid var(--ink);
   transform: rotate(45deg);
 }
@@ -105,21 +105,9 @@
   border-top: 2px dashed var(--ink);
 }
 
-/* Highlighted skills: blue screen tag with cream outlined lettering */
+/* Highlighted skills: look comes from the global .tag-hot; only the size is set here */
 .stack .hot {
-  padding: 4px 14px;
-  border: 4px solid #14100c;
-  border-radius: 10px;
-  background: #2f78f0;
-  color: #f1e6cd;
-  font-family: var(--font-display);
-  font-size: 1.05rem;
-  text-transform: uppercase;
-  text-shadow:
-    -2px -2px 0 #2b1a12, 2px -2px 0 #2b1a12, -2px 2px 0 #2b1a12, 2px 2px 0 #2b1a12,
-    0 -2px 0 #2b1a12, 0 2px 0 #2b1a12, -2px 0 0 #2b1a12, 2px 0 0 #2b1a12,
-    3px 3px 0 #2b1a12;
-  box-shadow: 3px 3px 0 var(--ink);
+  --tag-size: 1.05rem;
 }
 
 /* ---------- Earlier roles ---------- */
@@ -148,7 +136,7 @@
 
 .earlier summary:hover {
   background: var(--mustard);
-  color: #2b1a12;
+  color: var(--on-mustard);
 }
 
 .earlier[open] summary {

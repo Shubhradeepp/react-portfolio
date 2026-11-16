@@ -1,5 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-label="Placeholder photo 4">
 <rect width="800" height="1000" fill="#b83a22"/>
 <polygon points="400.0,80.0 444.5,185.0 530.2,109.7 524.7,223.6 634.5,193.0 580.2,293.2 692.5,313.2 600.0,380.0 692.5,446.8 580.2,466.8 634.5,567.0 524.7,536.4 530.2,650.3 444.5,575.0 400.0,680.0 355.5,575.0 269.8,650.3 275.3,536.4 165.5,567.0 219.8,466.8 107.5,446.8 200.0,380.0 107.5,313.2 219.8,293.2 165.5,193.0 275.3,223.6 269.8,109.7 355.5,185.0" fill="#e3a92b" stroke="#2b1a12" stroke-width="6" stroke-linejoin="round"/><circle cx="400" cy="380" r="130" fill="#f1e6cd" stroke="#2b1a12" stroke-width="8"/>
-<text x="400" y="978" text-anchor="middle" font-family="Courier New, monospace" font-weight="700" font-size="20" fill="#2b1a12" opacity=".7">dummy image, replace me</text>
 </svg>

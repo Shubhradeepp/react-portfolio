@@ -1,14 +1,20 @@
 /* The contact block is a flat mustard poster in both themes, so it pins its own ink and paper. */
 .section {
-  --ink: #2b1a12;
-  --ink-soft: #4a3326;
-  --paper: #f1e6cd;
-  --paper-light: #f8f0dd;
-  --paper-deep: #e6d7b4;
-  --focus: #1c4fd8;
-  background: var(--mustard);
+  --ink: var(--ink-fixed);
+  --ink-soft: var(--ink-fixed-soft);
+  --paper: var(--paper-fixed);
+  --paper-light: var(--paper-light-fixed);
+  --paper-deep: var(--paper-deep-fixed);
+  --focus: color-mix(in srgb, var(--secondary), #000 25%);
+  background: var(--secondary);
   color: var(--ink);
   border-top: var(--border) solid var(--ink);
+}
+
+/* "Let's talk" heading and intro text in white */
+.section header h2,
+.section header p {
+  color: var(--white);
 }
 
 .layout {
@@ -33,7 +39,7 @@
 }
 
 .emailBox > svg {
-  color: var(--red);
+  color: var(--primary);
 }
 
 .email {
@@ -128,7 +134,7 @@
 .field input:focus-visible,
 .field textarea:focus-visible {
   outline-offset: 1px;
-  background: #fffaf0;
+  background: var(--paper-lightest);
 }
 
 .note {

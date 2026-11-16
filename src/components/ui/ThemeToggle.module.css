@@ -12,5 +12,5 @@
 
 .toggle:hover {
   background: var(--mustard);
-  color: #2b1a12;
+  color: var(--on-mustard);
 }

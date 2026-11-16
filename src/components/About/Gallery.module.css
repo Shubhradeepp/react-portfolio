@@ -82,7 +82,7 @@
 }
 
 .dialog::backdrop {
-  background: rgba(43, 26, 18, 0.78);
+  background: var(--scrim);
 }
 
 .viewer img {

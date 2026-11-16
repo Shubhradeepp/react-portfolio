@@ -60,7 +60,7 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background-image: radial-gradient(rgba(43, 26, 18, 0.35) 1px, transparent 1.3px);
+  background-image: radial-gradient(color-mix(in srgb, var(--ink-fixed) 35%, transparent) 1px, transparent 1.3px);
   background-size: 6px 6px;
   mix-blend-mode: multiply;
   opacity: 0.55;
@@ -108,7 +108,7 @@
   padding: 6px 12px;
   border: 2px solid var(--ink);
   background: var(--mustard);
-  color: #2b1a12;
+  color: var(--on-mustard);
   font-weight: 700;
   font-size: 0.9rem;
 }
@@ -123,12 +123,7 @@
 
 .stack .category {
   background: var(--tone);
-  color: #fbf1da;
-}
-
-.card:nth-child(5n + 1) .stack .category,
-.card:nth-child(5n + 3) .stack .category {
-  color: #2b1a12;
+  color: var(--tone-ink);
 }
 
 .links {

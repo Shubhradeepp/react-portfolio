@@ -13,17 +13,52 @@
   --border: 3px;
 
   color-scheme: light;
+
+  /* ---------- Brand colors: change these two and the whole site follows ---------- */
+  --primary: #b83a22;
+  --secondary: #2f78f0;
+
+  /* ---------- Accent inks (used as section / card tones) ---------- */
+  --orange: #e2792d;
+  --mustard: #e3a92b;
+  --olive: #6b7036;
+  --teal: #2f6b66;
+
+  /* ---------- Fixed neutrals: these never flip with the theme ---------- */
+  --ink-fixed: #2b1a12;
+  --ink-fixed-soft: #4a3326;
+  --ink-deep: #14100c;
+  --cream: #fbf1da;
+  --paper-fixed: #f1e6cd;
+  --paper-light-fixed: #f8f0dd;
+  --paper-deep-fixed: #e6d7b4;
+  --paper-lightest: #fffaf0;
+  --white: #fff;
+
+  /* ---------- Readable text on top of each fill. Pair every new color with one. ---------- */
+  --on-primary: var(--cream);
+  --on-secondary: var(--paper-fixed);
+  --on-mustard: var(--ink-fixed);
+  --on-orange: var(--ink-fixed);
+  --on-olive: var(--cream);
+  --on-teal: var(--cream);
+
+  /* ---------- Themed surfaces and text ---------- */
   --paper: #f1e6cd;
   --paper-deep: #e6d7b4;
   --paper-light: #f8f0dd;
   --ink: #2b1a12;
   --ink-soft: #5a4333;
-  --orange: #e2792d;
-  --red: #b83a22;
-  --mustard: #e3a92b;
-  --olive: #6b7036;
-  --teal: #2f6b66;
-  --focus: #1c4fd8;
+  --focus: color-mix(in srgb, var(--secondary), #000 25%);
+
+  /* ---------- Shared effects ---------- */
+  --scrim: color-mix(in srgb, var(--ink-fixed) 78%, transparent);
+  --tag-outline:
+    -2px -2px 0 var(--ink-fixed), 2px -2px 0 var(--ink-fixed),
+    -2px 2px 0 var(--ink-fixed), 2px 2px 0 var(--ink-fixed),
+    0 -2px 0 var(--ink-fixed), 0 2px 0 var(--ink-fixed),
+    -2px 0 0 var(--ink-fixed), 2px 0 0 var(--ink-fixed),
+    3px 3px 0 var(--ink-fixed);
 }
 
 :root[data-theme="dark"] {
@@ -33,7 +68,7 @@
   --paper-light: #382619;
   --ink: #f1e6cd;
   --ink-soft: #cdb994;
-  --focus: #8ab4ff;
+  --focus: color-mix(in srgb, var(--secondary), #fff 45%);
 }
 
 *,
@@ -152,8 +187,8 @@ h4 {
   z-index: 200;
   padding: 10px 16px;
   background: var(--mustard);
-  color: #2b1a12;
-  border: var(--border) solid #2b1a12;
+  color: var(--on-mustard);
+  border: var(--border) solid var(--ink-fixed);
   font-weight: 700;
   text-decoration: none;
   transform: translateY(-200%);
@@ -195,13 +230,13 @@ h4 {
 }
 
 .btn-primary {
-  background: var(--red);
-  color: #fbf1da;
+  background: var(--primary);
+  color: var(--on-primary);
 }
 
 .btn-secondary:hover {
   background: var(--mustard);
-  color: #2b1a12;
+  color: var(--on-mustard);
 }
 
 /* Tags: ticket stubs rather than pills */
@@ -216,6 +251,20 @@ h4 {
   font-size: 0.8rem;
   font-weight: 700;
   line-height: 1.5;
+}
+
+/* Highlighted tag: secondary-colour screen tag with outlined lettering (add next to .chip) */
+.chip.tag-hot {
+  padding: var(--tag-py, 4px) 14px;
+  border: 4px solid var(--ink-deep);
+  border-radius: 10px;
+  background: var(--secondary);
+  color: var(--on-secondary);
+  font-family: var(--font-display);
+  font-size: var(--tag-size, 1rem);
+  text-transform: uppercase;
+  text-shadow: var(--tag-outline);
+  box-shadow: 3px 3px 0 var(--ink);
 }
 
 /* Halftone dot field, reused by sections */

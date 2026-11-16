@@ -1,7 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
 
-const COLORS = { dark: "#231710", light: "#f1e6cd" };
-
 export function useTheme() {
   const [theme, setTheme] = useState(
     () => document.documentElement.dataset.theme || "light"
@@ -9,9 +7,11 @@ export function useTheme() {
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
-    document
-      .querySelector('meta[name="theme-color"]')
-      ?.setAttribute("content", COLORS[theme]);
+    // Browser chrome follows whatever --paper is for the active theme
+    const paper = getComputedStyle(document.documentElement).getPropertyValue("--paper").trim();
+    if (paper) {
+      document.querySelector('meta[name="theme-color"]')?.setAttribute("content", paper);
+    }
   }, [theme]);
 
   const toggle = useCallback(() => {

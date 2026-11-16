@@ -2,19 +2,30 @@ import { useState } from "react";
 import projects from "../../data/projects.json";
 import { SectionHeading } from "../ui/SectionHeading";
 import { ExternalIcon, GithubIcon } from "../ui/Icons";
+import { toneVars } from "../../utils";
 import styles from "./Projects.module.css";
 
 const FILTERS = ["All", "Backend", "AI", "Full stack", "Mobile"];
 
-const TONES = ["orange", "teal", "mustard", "olive", "red"];
+const TONES = ["orange", "teal", "mustard", "olive", "primary"];
 
 const ProjectCard = ({ project, index }) => {
-  const { title, category, origin, image, description, result, stack, demo, source } = project;
+  const {
+    title,
+    category,
+    origin,
+    image,
+    description,
+    result,
+    stack,
+    demo,
+    source,
+  } = project;
   return (
     <article
       className={styles.card}
       data-size={index % 4 === 0 || index % 4 === 3 ? "wide" : "narrow"}
-      style={{ "--tone": `var(--${TONES[index % TONES.length]})` }}
+      style={toneVars(TONES[index % TONES.length])}
     >
       {image && (
         <div className={styles.media}>
@@ -46,13 +57,23 @@ const ProjectCard = ({ project, index }) => {
         {(demo || source) && (
           <div className={styles.links}>
             {demo && (
-              <a className="btn btn-secondary" href={demo} target="_blank" rel="noopener noreferrer">
+              <a
+                className="btn btn-secondary"
+                href={demo}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <ExternalIcon width={16} height={16} />
                 {demo.includes("linkedin.com") ? "Watch demo" : "Live demo"}
               </a>
             )}
             {source && (
-              <a className="btn btn-secondary" href={source} target="_blank" rel="noopener noreferrer">
+              <a
+                className="btn btn-secondary"
+                href={source}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <GithubIcon width={16} height={16} />
                 Source code
               </a>
@@ -66,16 +87,22 @@ const ProjectCard = ({ project, index }) => {
 
 export const Projects = () => {
   const [filter, setFilter] = useState("All");
-  const visible = projects.filter((p) => filter === "All" || p.category === filter);
+  const visible = projects.filter(
+    (p) => filter === "All" || p.category === filter,
+  );
 
   return (
     <section id="projects" className="section" aria-labelledby="projects-title">
       <div className="container">
-        <SectionHeading id="projects-title" title="Projects">
-          Systems I built at work, and personal projects with code you can read.
+        <SectionHeading id="projects-title" title="Builds">
+          Engineering solutions, production systems, and personal work.
         </SectionHeading>
 
-        <div className={styles.filters} role="group" aria-label="Filter projects by category">
+        <div
+          className={styles.filters}
+          role="group"
+          aria-label="Filter projects by category"
+        >
           {FILTERS.map((f) => (
             <button
               key={f}

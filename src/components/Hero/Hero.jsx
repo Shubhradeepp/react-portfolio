@@ -32,7 +32,7 @@ export const Hero = () => (
 
           <div className={styles.cta}>
             <a className="btn btn-primary" href="#projects">
-              See my projects
+              See my contributions
             </a>
             <a className="btn btn-secondary" href={profile.resume} download>
               <DownloadIcon width={18} height={18} />
@@ -61,7 +61,7 @@ export const Hero = () => (
 
         <div className={styles.stage}>
           <svg className={styles.discs} viewBox="0 0 400 400" aria-hidden="true" focusable="false">
-            <circle cx="200" cy="200" r="194" fill="var(--red)" stroke="var(--ink)" strokeWidth="4" />
+            <circle cx="200" cy="200" r="194" fill="var(--primary)" stroke="var(--ink)" strokeWidth="4" />
             <circle cx="200" cy="200" r="164" fill="var(--orange)" stroke="var(--ink)" strokeWidth="4" />
             <circle cx="200" cy="200" r="134" fill="var(--mustard)" stroke="var(--ink)" strokeWidth="4" />
           </svg>

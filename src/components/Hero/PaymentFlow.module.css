@@ -58,7 +58,7 @@
 
 .node[data-active="true"] {
   background: var(--mustard);
-  color: #2b1a12;
+  color: var(--on-mustard);
   transform: translateY(-3px);
 }
 
@@ -69,17 +69,17 @@
 
 .outcome[data-tone="ok"][data-active="true"] {
   background: var(--olive);
-  color: #fbf1da;
+  color: var(--on-olive);
 }
 
 .outcome[data-tone="warn"][data-active="true"] {
   background: var(--orange);
-  color: #2b1a12;
+  color: var(--on-orange);
 }
 
 .outcome[data-tone="bad"][data-active="true"] {
-  background: var(--red);
-  color: #fbf1da;
+  background: var(--primary);
+  color: var(--on-primary);
 }
 
 /* Connector: a thick rule with an arrow head */
@@ -109,7 +109,7 @@
   padding: 8px 14px;
   border: 2px solid var(--ink);
   background: var(--mustard);
-  color: #2b1a12;
+  color: var(--on-mustard);
   font-weight: 700;
   font-size: 0.95rem;
 }

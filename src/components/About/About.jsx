@@ -2,14 +2,10 @@ import profile from "../../data/profile.json";
 import { SectionHeading } from "../ui/SectionHeading";
 import { Gallery } from "./Gallery";
 import { Star } from "../ui/Decor";
+import { toneVars } from "../../utils";
 import styles from "./About.module.css";
 
 const TONES = ["mustard", "orange", "olive", "teal"];
-const INK_ON = { mustard: "#2b1a12", orange: "#2b1a12", olive: "#fbf1da", teal: "#fbf1da" };
-const toneStyle = (i) => {
-  const t = TONES[i % TONES.length];
-  return { "--tone": `var(--${t})`, "--tone-ink": INK_ON[t] };
-};
 
 export const About = () => (
   <section id="about" className="section" aria-labelledby="about-title">
@@ -50,7 +46,7 @@ export const About = () => (
 
           <dl className={styles.stats}>
             {profile.stats.map((s, i) => (
-              <div key={s.value + s.label} className={styles.stat} style={toneStyle(i)}>
+              <div key={s.value + s.label} className={styles.stat} style={toneVars(TONES[i % TONES.length])}>
                 <dt>{s.value}</dt>
                 <dd>{s.label}</dd>
               </div>

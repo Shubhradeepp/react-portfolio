@@ -2,6 +2,7 @@ import { useState } from "react";
 import history from "../../data/history.json";
 import { SectionHeading } from "../ui/SectionHeading";
 import { ChevronIcon } from "../ui/Icons";
+import { toneVars } from "../../utils";
 import styles from "./Experience.module.css";
 
 const VISIBLE = 3;
@@ -16,7 +17,7 @@ const Role = ({ job, defaultOpen, tone }) => {
 
   return (
     <li className={styles.item}>
-      <div className={styles.head} style={{ "--tone": `var(--${tone})` }}>
+      <div className={styles.head} style={toneVars(tone)}>
         <img
           className={styles.logo}
           src={job.logo}
@@ -59,7 +60,7 @@ const Role = ({ job, defaultOpen, tone }) => {
 
         <ul className={styles.stack} aria-label="Technologies used">
           {job.stack.map((t) => (
-  <li key={t} className={`chip ${HIGHLIGHT.includes(t) ? styles.hot : ""}`}>
+  <li key={t} className={`chip ${HIGHLIGHT.includes(t) ? `tag-hot ${styles.hot}` : ""}`}>
     {t}
   </li>
 ))}

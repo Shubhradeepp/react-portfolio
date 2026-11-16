@@ -50,7 +50,7 @@
 
 .link[aria-current="true"] {
   background: var(--mustard);
-  color: #2b1a12;
+  color: var(--on-mustard);
   border-color: var(--ink);
 }
 
@@ -105,7 +105,7 @@
 
 .panelLink[aria-current="true"] {
   background: var(--mustard);
-  color: #2b1a12;
+  color: var(--on-mustard);
 }
 
 .panelResume {

@@ -5,5 +5,4 @@
 <rect x="420" y="110" width="300" height="190" fill="#f1e6cd" transform="rotate(-6 570 205)"/>
 <rect x="420" y="150" width="300" height="38" fill="#2b1a12" transform="rotate(-6 570 205)"/>
 <rect x="440" y="230" width="110" height="22" fill="#b83a22" transform="rotate(-6 570 205)"/></g>
-<text x="400" y="428" text-anchor="middle" font-family="Courier New, monospace" font-weight="700" font-size="20" fill="#2b1a12" opacity=".7">dummy image, replace me</text>
 </svg>

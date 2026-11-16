@@ -80,7 +80,7 @@
 
 .social a:hover {
   background: var(--orange);
-  color: #2b1a12;
+  color: var(--on-orange);
   transform: rotate(-8deg);
 }
 
