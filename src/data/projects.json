@@ -1,26 +1,102 @@
 [
   {
+    "title": "Bank payment processing system",
+    "category": "Backend",
+    "origin": "Built at Caerus IT Consulting",
+    "image": "/assets/projects/placeholder-bank.svg",
+    "description": "A Spring Boot service that integrates with ICICI Bank for OTP, payment execution and status inquiry, and tracks every transaction. Payments that stay pending are reconciled automatically, and eligible failures are retried from a dedicated queue.",
+    "result": "Reduced manual payment handling by 60%.",
+    "stack": [
+      "Java",
+      "Spring Boot",
+      "ICICI Bank API",
+      "Queues"
+    ]
+  },
+  {
+    "title": "Event Subscription Tool",
+    "category": "Backend",
+    "origin": "Built at Caerus IT Consulting",
+    "image": "/assets/projects/placeholder-events.svg",
+    "description": "Configurable middleware that links business events to Camunda workflow steps, with event filtering, dynamic field mapping, correlation and idempotent duplicate handling. Messaging runs on Kafka topics and consumer groups, and subscription versioning is automated after each deployment.",
+    "result": "Cut manual intervention by 90%.",
+    "stack": [
+      "Java",
+      "Spring Boot",
+      "Camunda BPM",
+      "Kafka",
+      "SQL Server"
+    ]
+  },
+  {
+    "title": "RAG knowledge assistant",
+    "category": "AI",
+    "origin": "Proof of concept at Caerus IT Consulting",
+    "image": "/assets/projects/placeholder-rag.svg",
+    "description": "An internal assistant that answers questions about company policies and handbooks. It retrieves relevant passages with semantic search, generates answers with a local LLM and keeps chat memory within a session.",
+    "result": "Runs on a self-hosted model stack with Ollama.",
+    "stack": [
+      "Spring AI",
+      "Qdrant",
+      "Ollama",
+      "Spring Boot"
+    ]
+  },
+  {
+    "title": "Timesheet and status reporting platform",
+    "category": "Full stack",
+    "origin": "Built at Caerus IT Consulting",
+    "image": "/assets/projects/placeholder-timesheet.svg",
+    "description": "A full stack platform where employees log daily work updates with rich text and manage the lifecycle of their tasks. It makes it easy to track work updates across the organisation.",
+    "result": "Debounced auto-save reduced redundant backend traffic by 35%.",
+    "stack": [
+      "React",
+      "Node.js",
+      "PostgreSQL"
+    ]
+  },
+  {
     "title": "AI Chatbot",
-    "imageSrc": "projects/ai.jpeg",
-    "description": "Developed an intelligent conversational interface that delivers personalized responses and generates custom content, making every interaction uniquely engaging.",
-    "skills": ["Gemini (AI model/API)", "Express", "Node", "AWS", "Postman"],
+    "category": "AI",
+    "origin": "Personal project",
+    "image": "/assets/projects/ai.webp",
+    "description": "A conversational interface that gives personalised responses and generates custom content using the Gemini API.",
+    "stack": [
+      "Gemini API",
+      "Node.js",
+      "Express",
+      "AWS",
+      "Postman"
+    ],
     "demo": "https://ai-chatbot-ow5v.onrender.com/",
     "source": "https://github.com/Shubhradeepp/Ai-Chatbot"
   },
   {
     "title": "e-Voting System",
-    "imageSrc": "projects/vote.jpeg",
-    "description": "A secure and transparent digital democracy platform that revolutionizes the voting process with robust authentication and seamless user experience.",
-    "skills": ["Express", "MongodB", "JWT", "REST API","MVC", "Passport.js" ],
-    "demo": "https://github.com/Shubhradeepp/e-Voting-System",
+    "category": "Full stack",
+    "origin": "Personal project",
+    "image": "/assets/projects/vote.webp",
+    "description": "A secure and transparent online voting platform with token-based authentication and a simple voting flow.",
+    "stack": [
+      "Express",
+      "MongoDB",
+      "JWT",
+      "Passport.js",
+      "MVC"
+    ],
     "source": "https://github.com/Shubhradeepp/e-Voting-System"
   },
   {
     "title": "MemeStream",
-    "imageSrc": "projects/meme.png",
-    "description": "Your pocket-sized entertainment hub that delivers endless laughter with fresh memes at your fingertips, ready to share with friends instantly.",
-    "skills": ["Kotlin", "Android Development", "API"],
-    "demo": "https://www.linkedin.com/posts/shubhradeepp_app-project-kotlin-activity-7019343404551548928-rsI7/?utm_source=share&utm_medium=member_desktop",
-    "source": "https://www.github.com"
+    "category": "Mobile",
+    "origin": "Personal project",
+    "image": "/assets/projects/meme.webp",
+    "description": "An Android app that fetches fresh memes from an API and lets you share them with friends in a tap.",
+    "stack": [
+      "Kotlin",
+      "Android",
+      "REST API"
+    ],
+    "demo": "https://www.linkedin.com/posts/shubhradeepp_app-project-kotlin-activity-7019343404551548928-rsI7/"
   }
 ]

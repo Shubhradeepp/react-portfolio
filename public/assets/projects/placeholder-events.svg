@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="Placeholder cover for the event subscription tool">
+<rect width="800" height="450" fill="#2f6b66"/>
+<g stroke="#2b1a12" stroke-width="6" fill="none"><path d="M140 225 H320 M320 225 L480 120 M320 225 L480 330 M480 120 H660 M480 330 H660"/></g>
+<g stroke="#2b1a12" stroke-width="6"><circle cx="140" cy="225" r="46" fill="#b83a22"/><rect x="274" y="179" width="92" height="92" fill="#e3a92b"/><circle cx="480" cy="120" r="40" fill="#6b7036"/><circle cx="480" cy="330" r="40" fill="#2f6b66"/><rect x="640" y="90" width="80" height="60" fill="#f1e6cd"/><rect x="640" y="300" width="80" height="60" fill="#f1e6cd"/></g>
+<text x="400" y="428" text-anchor="middle" font-family="Courier New, monospace" font-weight="700" font-size="20" fill="#2b1a12" opacity=".7">dummy image, replace me</text>
+</svg>

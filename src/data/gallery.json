@@ -1,0 +1,22 @@
+[
+  {
+    "src": "/assets/gallery/photo-1.svg",
+    "alt": "Placeholder photo one",
+    "caption": "Kolkata, early morning"
+  },
+  {
+    "src": "/assets/gallery/photo-2.svg",
+    "alt": "Placeholder photo two",
+    "caption": "Day trip, hills"
+  },
+  {
+    "src": "/assets/gallery/photo-3.svg",
+    "alt": "Placeholder photo three",
+    "caption": "Desk setup"
+  },
+  {
+    "src": "/assets/gallery/photo-4.svg",
+    "alt": "Placeholder photo four",
+    "caption": "Team offsite"
+  }
+]

@@ -1,0 +1,120 @@
+.wrap {
+  margin-top: clamp(56px, 8vw, 96px);
+}
+
+.title {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+}
+
+.hint {
+  margin-top: 8px;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(18px, 3vw, 36px);
+  margin-top: 32px;
+  padding-bottom: 20px;
+}
+
+.item:nth-child(even) {
+  margin-top: 28px;
+}
+
+.polaroid {
+  display: block;
+  width: 100%;
+  padding: 10px 10px 0;
+  border: var(--border) solid var(--ink);
+  background: var(--paper-light);
+  box-shadow: 6px 6px 0 var(--ink);
+  text-align: left;
+  cursor: zoom-in;
+  transform: rotate(-2deg);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.item:nth-child(even) .polaroid {
+  transform: rotate(1.8deg);
+}
+
+.item:nth-child(3) .polaroid {
+  transform: rotate(1deg);
+}
+
+.polaroid:hover,
+.polaroid:focus-visible {
+  transform: rotate(0) translateY(-4px);
+  box-shadow: 9px 11px 0 var(--ink);
+}
+
+.polaroid img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 2px solid var(--ink);
+  filter: sepia(0.25) contrast(1.04);
+}
+
+.cap {
+  display: block;
+  padding: 12px 2px 14px;
+  font-family: var(--font-accent);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+/* ---------- Viewer ---------- */
+.dialog {
+  width: min(92vw, 680px);
+  max-height: 94vh;
+  margin: auto;
+  padding: 18px;
+  border: var(--border) solid var(--ink);
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 10px 10px 0 var(--ink);
+  overflow: auto;
+}
+
+.dialog::backdrop {
+  background: rgba(43, 26, 18, 0.78);
+}
+
+.viewer img {
+  width: 100%;
+  max-height: 68vh;
+  object-fit: contain;
+  border: 2px solid var(--ink);
+  background: var(--paper-deep);
+}
+
+.viewer figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 12px;
+  font-family: var(--font-accent);
+  font-weight: 700;
+}
+
+.count {
+  color: var(--ink-soft);
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+@media (min-width: 760px) {
+  .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="Placeholder cover for the bank payment system">
+<rect width="800" height="450" fill="#e2792d"/>
+<g stroke="#2b1a12" stroke-width="6">
+<circle cx="250" cy="225" r="140" fill="#e3a92b"/><circle cx="250" cy="225" r="95" fill="#e2792d"/><circle cx="250" cy="225" r="48" fill="#f1e6cd"/>
+<rect x="420" y="110" width="300" height="190" fill="#f1e6cd" transform="rotate(-6 570 205)"/>
+<rect x="420" y="150" width="300" height="38" fill="#2b1a12" transform="rotate(-6 570 205)"/>
+<rect x="440" y="230" width="110" height="22" fill="#b83a22" transform="rotate(-6 570 205)"/></g>
+<text x="400" y="428" text-anchor="middle" font-family="Courier New, monospace" font-weight="700" font-size="20" fill="#2b1a12" opacity=".7">dummy image, replace me</text>
+</svg>

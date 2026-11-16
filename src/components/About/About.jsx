@@ -1,51 +1,82 @@
-import React from "react";
-
+import profile from "../../data/profile.json";
+import { SectionHeading } from "../ui/SectionHeading";
+import { Gallery } from "./Gallery";
+import { Star } from "../ui/Decor";
 import styles from "./About.module.css";
-import { getImageUrl } from "../../utils";
 
-export const About = () => {
-  return (
-    <section className={styles.container} id="about">
-      <h2 className={styles.title}>About</h2>
-      <div className={styles.content}>
-        <img
-          // src={getImageUrl("about/about.jpg")}
-          src={getImageUrl("about/metro.png")}
-          alt="Me sitting with a laptop"
-          className={styles.aboutImage}
-        />
-        <ul className={styles.aboutItems}>
-          <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/serverIcon.png")} alt="Cursor icon" />
-            <div className={styles.aboutItemText}>
-              <h3 style={{ color: "#E535AB" }}>Backend Brilliance</h3>
-              <p>
-              Engineering lightning-fast backend systems and RESTful APIs that handle millions of requests with ease. Creating secure, optimized server architectures that power the next generation of web applications.
-                
-              </p>
-            </div>
-          </li>
-          <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/cursorIcon.png")} alt="Server icon" />
-            <div className={styles.aboutItemText}>
-              <h3 style={{ color: "#E535AB" }}>Frontend Mastery</h3>
-              <p>
-              Crafting pixel-perfect, responsive interfaces using React that not only look good but feel intuitive. I believe in creating experiences, not just interfaces.
-              </p>
-            </div>
-          </li>
-          {/* <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/cursorIcon.png")} alt="UI icon" />
-            <div className={styles.aboutItemText}>
-              <h3>UI Designer</h3>
-              <p>
-                I have designed multiple landing pages and have created design
-                systems as well
-              </p>
-            </div>
-          </li> */}
+const TONES = ["mustard", "orange", "olive", "teal"];
+const INK_ON = { mustard: "#2b1a12", orange: "#2b1a12", olive: "#fbf1da", teal: "#fbf1da" };
+const toneStyle = (i) => {
+  const t = TONES[i % TONES.length];
+  return { "--tone": `var(--${t})`, "--tone-ink": INK_ON[t] };
+};
+
+export const About = () => (
+  <section id="about" className="section" aria-labelledby="about-title">
+    <div className="container">
+      <SectionHeading id="about-title" title="About me" />
+
+      <div className={styles.layout}>
+        <figure className={styles.figure}>
+          <div className={styles.frame}>
+            <img
+              className={styles.portrait}
+              src={profile.portrait}
+              alt={`${profile.name} standing in front of a Kolkata metro station mural`}
+              width="450"
+              height="450"
+              loading="lazy"
+            />
+            <Star className={styles.star} points={10} inner={32} />
+          </div>
+          <figcaption className={styles.caption}>{profile.location}</figcaption>
+        </figure>
+
+        <div className={styles.text}>
+          <p className={styles.lead}>
+            I'm a full stack engineer who likes systems that keep working when real money, real
+            users and real deadlines are involved.
+          </p>
+          <p>
+            At Caerus IT Consulting I build the backend side of business systems: a payment
+            platform integrated with ICICI Bank, an event-driven layer that connects Kafka events to
+            Camunda workflows, and an AI knowledge assistant. Before that I shipped payments,
+            subscriptions and patient-care features for a healthcare SaaS product at Swingbell Labs.
+          </p>
+          <p>
+            I care about maintainable code, clear APIs and results the business can measure, and I
+            work comfortably in Agile teams.
+          </p>
+
+          <dl className={styles.stats}>
+            {profile.stats.map((s, i) => (
+              <div key={s.value + s.label} className={styles.stat} style={toneStyle(i)}>
+                <dt>{s.value}</dt>
+                <dd>{s.label}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </div>
+
+      <div className={styles.focus}>
+        <h3 className={styles.focusTitle}>What I work on</h3>
+        <ul className={styles.focusList}>
+          {profile.focus.map((f) => (
+            <li key={f.title}>
+              <h4>{f.title}</h4>
+              <p>{f.text}</p>
+            </li>
+          ))}
         </ul>
       </div>
-    </section>
-  );
-};
+
+      {/* <Gallery /> */}
+
+      <p className={styles.education}>
+        <strong>Education:</strong> {profile.education.degree}, {profile.education.school} (
+        {profile.education.years}), {profile.education.score}.
+      </p>
+    </div>
+  </section>
+);

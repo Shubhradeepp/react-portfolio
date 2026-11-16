@@ -1,0 +1,41 @@
+{
+  "name": "Shubhradeep Maity",
+  "role": "Full Stack Software Engineer",
+  "location": "Kolkata, India",
+  "email": "shubhradeepmaity3@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/shubhradeepp/",
+  "github": "https://github.com/Shubhradeepp",
+  "resume": "/Shubhradeep_Maity_Resume.pdf",
+  "photo": "/assets/hero/profile.webp",
+  "portrait": "/assets/about/portrait.webp",
+  "stats": [
+    { "value": "2+", "label": "years building Java, Node.js and React applications" },
+    { "value": "60%", "label": "less manual effort in payment reconciliation and retries" },
+    { "value": "90%", "label": "less manual work maintaining event subscriptions" },
+    { "value": "6+", "label": "Camunda workflows delivered for an HRMS platform" }
+  ],
+  "focus": [
+    {
+      "title": "Payments and bank integrations",
+      "text": "ICICI Bank API integration with OTP, payment execution, status inquiry, transaction tracking, and queue-based retries and reconciliation."
+    },
+    {
+      "title": "Event-driven workflows",
+      "text": "Kafka messaging and Camunda BPM workflows, with event filtering, field mapping, correlation and idempotent duplicate handling."
+    },
+    {
+      "title": "AI features that use company data",
+      "text": "RAG assistants built with Spring AI, Qdrant and Ollama, with semantic search and session-based chat memory."
+    },
+    {
+      "title": "Full stack products",
+      "text": "React front ends on Node.js or Spring Boot back ends with PostgreSQL, from healthcare booking to timesheet reporting."
+    }
+  ],
+  "education": {
+    "degree": "B.Tech in Computer Science and Engineering",
+    "school": "Netaji Subhash Engineering College, Kolkata",
+    "years": "2020 to 2024",
+    "score": "8.9 / 10 CGPA"
+  }
+}

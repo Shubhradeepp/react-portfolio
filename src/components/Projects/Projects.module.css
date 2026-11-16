@@ -1,60 +1,160 @@
-@import "../../vars.css";
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: clamp(28px, 4vw, 44px);
+}
 
-.container {
-  margin-top: 76px;
-  color: var(--color-text);
-  margin-left: 10%;
-  margin-right: 10%;
+.filter {
+  min-height: 44px;
+  padding: 0 18px;
+  border: var(--border) solid var(--ink);
+  background: var(--paper-light);
+  font-family: var(--font-accent);
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.filter:hover {
+  background: var(--paper-deep);
+}
+
+.filter[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.grid {
+  display: grid;
+  gap: clamp(26px, 4vw, 44px);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  border: var(--border) solid var(--ink);
+  background: var(--paper-light);
+  box-shadow: 8px 8px 0 var(--ink);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 11px 11px 0 var(--ink);
+}
+
+.media {
+  position: relative;
+  overflow: hidden;
+  border-bottom: var(--border) solid var(--ink);
+  background: var(--tone);
+  height: clamp(190px, 24vw, 280px);
+}
+
+/* Halftone print effect over photos */
+.media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(43, 26, 18, 0.35) 1px, transparent 1.3px);
+  background-size: 6px 6px;
+  mix-blend-mode: multiply;
+  opacity: 0.55;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: sepia(0.25) contrast(1.05);
+  transition: transform 0.5s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 12px;
+  padding: clamp(18px, 3vw, 28px);
+}
+
+.origin {
+  font-family: var(--font-accent);
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
 }
 
 .title {
-  font-size: 35px;
+  font-size: clamp(1.6rem, 4.4vw, 2.4rem);
+  overflow-wrap: anywhere;
+}
+
+.description {
+  max-width: 62ch;
+  font-size: 0.98rem;
+}
+
+.result {
+  align-self: flex-start;
+  padding: 6px 12px;
+  border: 2px solid var(--ink);
+  background: var(--mustard);
+  color: #2b1a12;
   font-weight: 700;
-  letter-spacing: 1.75px;
-  text-transform: uppercase;
+  font-size: 0.9rem;
 }
 
-.projects {
-  margin-top: 37px;
+.stack {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  width: 100%;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 8px;
 }
 
-/* Mobile */
-@media (max-width: 600px) {
-  .container {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  .title {
-    font-size: 28px;
-    text-align: center;
-  }
-
-  .projects {
-    flex-direction: column;
-    gap: 25px;
-  }
-
+.stack .category {
+  background: var(--tone);
+  color: #fbf1da;
 }
 
-/* Tablet */
-@media (min-width: 601px) and (max-width: 900px) {
-  .container {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  .title {
-    font-size: 28px;
-    text-align: center;
-  }
-
+.card:nth-child(5n + 1) .stack .category,
+.card:nth-child(5n + 3) .stack .category {
+  color: #2b1a12;
 }
 
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding-top: 12px;
+}
+
+.links :global(.btn) {
+  min-height: 44px;
+  font-size: 0.85rem;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+  .card[data-size="wide"] {
+    grid-column: span 7;
+  }
+  .card[data-size="narrow"] {
+    grid-column: span 5;
+  }
+  /* the odd one out at the end fills the row */
+  .card:last-child:nth-child(odd) {
+    grid-column: span 12;
+  }
+}

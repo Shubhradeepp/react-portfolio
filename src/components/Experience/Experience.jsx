@@ -1,54 +1,106 @@
-import React from "react";
-
-import styles from "./Experience.module.css";
-import skills from "../../data/skills.json";
+import { useState } from "react";
 import history from "../../data/history.json";
-import { getImageUrl } from "../../utils";
+import { SectionHeading } from "../ui/SectionHeading";
+import { ChevronIcon } from "../ui/Icons";
+import styles from "./Experience.module.css";
 
-export const Experience = () => {
+const VISIBLE = 3;
+const TONES = ["mustard", "orange"];
+const HIGHLIGHT = ["Kafka", "Camunda BPM", "Spring Boot", "Java", "PostgreSQL"];
+
+const Role = ({ job, defaultOpen, tone }) => {
+  const [expanded, setExpanded] = useState(defaultOpen);
+  const shown = expanded ? job.highlights : job.highlights.slice(0, VISIBLE);
+  const hidden = job.highlights.length - VISIBLE;
+  const listId = `role-${job.organisation.replace(/\W+/g, "-").toLowerCase()}`;
+
   return (
-    <section className={styles.container} id="experience">
-      <h2 className={styles.title}>Experience</h2>
-      <div className={styles.content}>
-        <div className={styles.skills}>
-          {skills.map((skill, id) => {
-            return (
-              <div key={id} className={styles.skill}>
-                <div className={styles.skillImageContainer}>
-                  <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
-                </div>
-                <p>{skill.title}</p>
-              </div>
-            );
-          })}
+    <li className={styles.item}>
+      <div className={styles.head} style={{ "--tone": `var(--${tone})` }}>
+        <img
+          className={styles.logo}
+          src={job.logo}
+          alt=""
+          width="56"
+          height="56"
+          loading="lazy"
+        />
+        <div className={styles.who}>
+          <h3 className={styles.role}>{job.role}</h3>
+          <p className={styles.org}>{job.organisation}</p>
         </div>
-        <ul className={styles.history}>
-          {history.map((historyItem, id) => {
-            return (
-              <li key={id} className={styles.historyItem}>
-                <div className="style.expbox">
-                <img
-                  src={getImageUrl(historyItem.imageSrc)}
-                  alt={`${historyItem.organisation} Logo`}
-                />
-                <div className={styles.historyItemDetails}>
-                 <h3>
-                   {`${historyItem.role} `}
-                    <h3 style={{ color: "#E535AB" }}>{historyItem.organisation}</h3>
-                  </h3>
-                  <p>{`${historyItem.startDate} - ${historyItem.endDate}`}</p>
-                  <ul>
-                    {historyItem.experiences.map((experience, id) => {
-                      return <li  key={id}>{experience}</li>;
-                    })}
-                  </ul>
-                </div>
-                </div>
-              </li>
-            );
-          })}
+        <p className={styles.meta}>
+          <span className={styles.dates}>
+            <time>{job.start}</time> to <time>{job.end}</time>
+          </span>
+          <span className={styles.type}>{job.type}</span>
+        </p>
+      </div>
+
+      <div className={styles.body}>
+        <ul id={listId} className={styles.points}>
+          {shown.map((point) => (
+            <li key={point}>{point}</li>
+          ))}
+        </ul>
+
+        {hidden > 0 && (
+          <button
+            type="button"
+            className={`btn btn-secondary ${styles.more}`}
+            aria-expanded={expanded}
+            aria-controls={listId}
+            onClick={() => setExpanded((e) => !e)}
+          >
+            {expanded ? "Show fewer details" : `Show ${hidden} more`}
+            <ChevronIcon width={16} height={16} className={expanded ? styles.flip : ""} />
+          </button>
+        )}
+
+        <ul className={styles.stack} aria-label="Technologies used">
+          {job.stack.map((t) => (
+  <li key={t} className={`chip ${HIGHLIGHT.includes(t) ? styles.hot : ""}`}>
+    {t}
+  </li>
+))}
         </ul>
       </div>
-    </section>
+    </li>
   );
 };
+
+export const Experience = () => (
+  <section id="experience" className="section" aria-labelledby="exp-title">
+    <div className="container">
+      <SectionHeading id="exp-title" title="Experience">
+        Where I've worked and what I delivered.
+      </SectionHeading>
+
+      <ol className={styles.timeline}>
+        {history.main.map((job, i) => (
+          <Role key={job.organisation} job={job} defaultOpen={false} tone={TONES[i % TONES.length]} />
+        ))}
+      </ol>
+
+      <details className={styles.earlier}>
+        <summary>
+          Earlier roles and internships
+          <ChevronIcon width={20} height={20} />
+        </summary>
+        <ul>
+          {history.earlier.map((job) => (
+            <li key={job.organisation}>
+              <div>
+                <h3>{job.role}</h3>
+                <p className={styles.earlierOrg}>
+                  {job.organisation}, {job.start} to {job.end}
+                </p>
+              </div>
+              <p>{job.text}</p>
+            </li>
+          ))}
+        </ul>
+      </details>
+    </div>
+  </section>
+);

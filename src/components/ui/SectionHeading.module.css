@@ -1,0 +1,29 @@
+.heading {
+  display: grid;
+  gap: 18px;
+  align-items: end;
+  margin-bottom: clamp(32px, 5vw, 56px);
+  padding-bottom: 20px;
+  border-bottom: var(--border) solid var(--ink);
+}
+
+.title {
+  font-size: clamp(2.5rem, 9.5vw, 6rem);
+  overflow-wrap: anywhere;
+}
+
+.intro {
+  max-width: 44ch;
+  color: var(--ink-soft);
+  font-size: 1rem;
+}
+
+@media (min-width: 900px) {
+  .heading {
+    grid-template-columns: 1fr minmax(0, 40ch);
+    gap: 40px;
+  }
+  .intro {
+    padding-bottom: 8px;
+  }
+}

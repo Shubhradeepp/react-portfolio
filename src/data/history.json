@@ -1,70 +1,69 @@
-[
-  {
-    "role": "System Engineer",
-    "organisation": "Caerus IT Consulting Pvt. Ltd",
-    "startDate": "Sept, 2025",
-    "endDate": "Present",
-    "experiences": [
-      "Led the development of a scalable HRMS platform with role-based access control, architecting the backend using Node.js, PostgreSQL, and RESTful APIs while also driving end-to-end UI development in React.",
-      "Implemented containerization using Docker and restructured the backend into microservices, improving scalability, maintainability, and deployment efficiency."
-    ],
-    "imageSrc": "history/caerus.jpeg"
-  },
-  {
-    "role": "Full-Stack Developer",
-    "organisation": "SwingBell Labs",
-    "startDate": "Jan, 2025",
-    "endDate": "Aug, 2025",
-    "experiences": [
-      "Designed SEO-optimized doctor profiles boosting search visibility by 10%.",
-      "Enhanced subscription flows with Razorpay, improved user retention by 20%.",
-      "Built Help & Support system, patient care booking module, and strengthened platform security with JWE encryption, leading to a more efficient and secure healthcare system.",
-      "Tech stack: TypeScript, React, Java, Spring Boot, Encryption, PostgreSQL, Cryptography"
-    ],
-    "imageSrc": "history/swingbell.jpg"
-  },
-  {
-    "role": "Backend Engineer",
-    "organisation": "Aryabhata Tech Pvt Ltd",
-    "startDate": "Dec, 2024",
-    "endDate": "Mar, 2025",
-    "experiences": [
-      "Collaborated to build a platform connecting startup founders with potential investors to support funding opportunities.",
-      "Tech stack: React, Node.js, Express.js, Data Modeling, MongoDB, RESTful APIs"
-    ],
-    "imageSrc": "history/arj.jpg"
-  },
-  {
-    "role": "SDE Intern",
-    "organisation": "Bluestock Fintech",
-    "startDate": "Aug, 2024",
-    "endDate": "Dec, 2024",
-    "experiences": [
-      "Assisted in developing FinTech web app supporting 250+ active users",
-      "Tech stack: React, Node.js, Express.js, Context API, Redux, RESTful APIs"
-    ],
-    "imageSrc": "history/blu.jpeg"
-  },
-  {
-    "role": "Software Engineering Expertise for AI Training",
-    "organisation": "Outlier",
-    "startDate": "Jun, 2024",
-    "endDate": "Present",
-    "experiences": [
-      "Contributed to training generative AI models and evaluating AI-generated code",
-      "Tech stack: Django, Python, and C++"
-    ],
-    "imageSrc": "history/out.jpeg"
-  },
-  {
-    "role": "Data Analyst Intern",
-    "organisation": "Mentorness",
-    "startDate": "Feb, 2024",
-    "endDate": "Apr, 2024",
-    "experiences": [
-      "Engineered SQL database for guest data management and created Power BI dashboards for sales analysis",
-      "Tech stack: SQL, Power BI"
-    ],
-    "imageSrc": "history/ment.jpeg"
-  }
-]
+{
+  "main": [
+    {
+      "role": "System Engineer",
+      "organisation": "Caerus IT Consulting Pvt. Ltd.",
+      "type": "Full-time, on-site",
+      "start": "Sep 2025",
+      "end": "Present",
+      "logo": "/assets/history/caerus.jpeg",
+      "highlights": [
+        "Built a bank-integrated payment processing system in Java and Spring Boot using ICICI Bank APIs for OTP, payment execution, status inquiry and transaction tracking. Pending payments go to a queue for automated reconciliation and eligible failures to a retry queue, cutting manual effort by 60%.",
+        "Developed the Event Subscription Tool (EST), an event-driven layer that connects business events to Camunda workflow steps. It supports subscription configuration, event filtering, dynamic field mapping, correlation and idempotent duplicate-event handling.",
+        "Migrated the messaging layer from RabbitMQ to Kafka, using a publish-subscribe model with topics and consumer groups.",
+        "Automated EST subscription versioning by parsing Camunda BPMN metadata after each deployment, validating process-variable mappings and recovering defective event steps. This reduced manual intervention by 90%.",
+        "Built Camunda BPMN workflows for an HRMS platform (onboarding, offboarding, appraisal and employee lifecycle), orchestrating 6+ business processes.",
+        "Created a RAG-based knowledge assistant proof of concept with Spring Boot, Spring AI, Qdrant and Ollama, offering semantic search, LLM answers and session-based chat memory over company policies and handbooks.",
+        "Led full stack development of an enterprise timesheet and status reporting platform in Node.js, React and PostgreSQL, with rich-text updates and task lifecycle management. Debounced auto-save reduced redundant backend traffic by 35%."
+      ],
+      "stack": ["Java", "Spring Boot", "Kafka", "Camunda BPM", "SQL Server", "Node.js", "React", "PostgreSQL", "Spring AI", "Qdrant"]
+    },
+    {
+      "role": "Full Stack Developer",
+      "organisation": "Swingbell Labs",
+      "type": "Full-time, remote",
+      "start": "Jan 2025",
+      "end": "Aug 2025",
+      "logo": "/assets/history/swingbell.jpg",
+      "highlights": [
+        "Built payment and monetisation features that increased revenue by 18% and improved transaction success rates by 20%.",
+        "Added SEO-optimised doctor profiles with dynamic routing and structured metadata (React Helmet and Google Schema), lifting organic search visibility by 18%.",
+        "Developed a subscription management system with Razorpay, improving user retention by 20% and reducing payment processing errors by 11%.",
+        "Led development of a real-time patient care system with appointment booking and rescheduling, using test-driven development to keep it reliable.",
+        "Worked with the team to ship a Help and Support ticketing system in React and Material UI, which contributed to a 30% increase in customer satisfaction.",
+        "Delivered in Agile sprints on a SaaS healthcare product."
+      ],
+      "stack": ["React", "TypeScript", "Java", "PostgreSQL", "Razorpay", "Encryption", "Material UI"]
+    }
+  ],
+  "earlier": [
+    {
+      "role": "Backend Engineer",
+      "organisation": "Aryabhata Technologies Pvt. Ltd.",
+      "start": "Dec 2024",
+      "end": "Mar 2025",
+      "text": "Helped build a platform connecting startup founders with investors, using React, Node.js, Express.js and MongoDB."
+    },
+    {
+      "role": "SDE Intern",
+      "organisation": "Bluestock Fintech",
+      "start": "Aug 2024",
+      "end": "Dec 2024",
+      "text": "Worked on a fintech web app used by 250+ active users, using React, Redux, Node.js and Express.js."
+    },
+    {
+      "role": "Software Engineering Expert, AI Training",
+      "organisation": "Outlier",
+      "start": "Jun 2024",
+      "end": "Present",
+      "text": "Evaluate AI-generated code and help train generative AI models, working in Python, Django and C++."
+    },
+    {
+      "role": "Data Analyst Intern",
+      "organisation": "Mentorness",
+      "start": "Feb 2024",
+      "end": "Apr 2024",
+      "text": "Designed a SQL database for guest data and built Power BI dashboards for sales analysis."
+    }
+  ]
+}

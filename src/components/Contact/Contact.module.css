@@ -1,85 +1,143 @@
-@import "../../vars.css";
-
-.container {
-  color: var(--color-text);
-  margin-top: 120px;
-  background-color: var(--color-secondary);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100vw;
-  padding: 58px 10%;
-  gap: 10px;
+/* The contact block is a flat mustard poster in both themes, so it pins its own ink and paper. */
+.section {
+  --ink: #2b1a12;
+  --ink-soft: #4a3326;
+  --paper: #f1e6cd;
+  --paper-light: #f8f0dd;
+  --paper-deep: #e6d7b4;
+  --focus: #1c4fd8;
+  background: var(--mustard);
+  color: var(--ink);
+  border-top: var(--border) solid var(--ink);
 }
 
-.text h2 {
-  font-size: 80px;
+.layout {
+  display: grid;
+  gap: clamp(28px, 5vw, 56px);
+  align-items: start;
+}
+
+.direct {
+  display: grid;
+  gap: 24px;
+  min-width: 0;
+}
+
+.emailBox {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+  border: var(--border) solid var(--ink);
+  background: var(--paper-light);
+  box-shadow: 8px 8px 0 var(--ink);
+}
+
+.emailBox > svg {
+  color: var(--red);
+}
+
+.email {
+  font-family: var(--font-display);
   font-weight: 700;
-  letter-spacing: 4px;
+  font-size: clamp(1.1rem, 4.3vw, 1.7rem);
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+  overflow-wrap: anywhere;
 }
 
-.text p {
-  font-size: 40px;
-  font-weight: 400;
-  letter-spacing: 2px;
+.copy {
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 2px solid var(--ink);
+  background: var(--paper);
+  font-family: var(--font-accent);
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.copy:hover {
+  background: var(--ink);
+  color: var(--paper);
 }
 
 .links {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  list-style: none;
-  gap: 26px;
+  flex-wrap: wrap;
+  gap: 14px;
 }
 
-.link {
-  display: flex;
+.links a {
+  display: inline-flex;
   align-items: center;
-  gap: 25px;
-}
-
-.link a {
-  color: var(--color-text);
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 18px;
+  border: var(--border) solid var(--ink);
+  background: var(--paper);
+  font-family: var(--font-accent);
+  font-weight: 700;
   text-decoration: none;
-  font-size: 30px;
-  font-weight: 400;
-  letter-spacing: 1.5px;
+  box-shadow: 4px 4px 0 var(--ink);
+  transition: transform 0.15s, box-shadow 0.15s;
 }
 
-@media screen and (max-width: 830px) {
-  .container {
-    flex-direction: column;
-    gap: 23px;
-  }
-
-  .text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .links {
-    align-items: center;
-  }
+.links a:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--ink);
 }
 
-@media (max-width: 600px) { 
-  .container {
-    padding: 40px 5%;
-  }
+.location {
+  font-weight: 700;
+}
 
-  .text h2 {
-    font-size: 50px;
-    text-align: center;
-  }
+.form {
+  display: grid;
+  gap: 18px;
+  padding: clamp(18px, 3.5vw, 32px);
+  border: var(--border) solid var(--ink);
+  background: var(--paper-light);
+  box-shadow: 8px 8px 0 var(--ink);
+}
 
-  .text p {
-    font-size: 28px;
-    text-align: center;
-  }
+.field {
+  display: grid;
+  gap: 6px;
+}
 
-  .link a {
-    font-size: 22px;
+.field span {
+  font-family: var(--font-accent);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: var(--border) solid var(--ink);
+  border-radius: 0;
+  background: var(--paper);
+  resize: vertical;
+}
+
+.field input:focus-visible,
+.field textarea:focus-visible {
+  outline-offset: 1px;
+  background: #fffaf0;
+}
+
+.note {
+  min-height: 1.4em;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 900px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   }
-  
 }

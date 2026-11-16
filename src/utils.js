@@ -1,3 +1,1 @@
-export const getImageUrl = (path) => {
-  return new URL(`/assets/${path}`, import.meta.url).href;
-};
+export const SITE_URL = "https://shubhradeep-maity-dev-portfolio.vercel.app";

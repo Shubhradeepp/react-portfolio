@@ -1,0 +1,35 @@
+.footer {
+  padding-block: 22px;
+  background: var(--ink);
+  color: var(--paper);
+  border-top: var(--border) solid var(--ink);
+  font-family: var(--font-accent);
+  font-size: 0.85rem;
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+}
+
+.top {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.top:hover {
+  color: var(--mustard);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footer :focus-visible {
+  outline-color: var(--mustard);
+}

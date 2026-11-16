@@ -1,70 +1,63 @@
 [
   {
-    "title": "Javascript",
-    "imageSrc": "skills/js.png"
+    "group": "Languages",
+    "items": [
+      { "name": "Java", "core": true },
+      { "name": "JavaScript" , "core": true },
+      { "name": "TypeScript", "core": true },
+      { "name": "C++" }
+    ]
   },
   {
-    "title": "Typescript",
-    "imageSrc": "skills/TypeScript.png"
+    "group": "Backend and messaging",
+    "items": [
+      { "name": "Spring Boot"},
+      { "name": "Apache Kafka", "core": true },
+      { "name": "Camunda BPM", "core": true },
+      { "name": "Node.js" },
+      { "name": "Express.js" },
+      { "name": "REST APIs" },
+      { "name": "JPA" },
+      { "name": "RabbitMQ" , "core": true },
+      { "name": "Workflow orchestration" }
+    ]
   },
   {
-    "title": "Java",
-    "imageSrc": "skills/Java.png"
+    "group": "Generative AI",
+    "items": [
+      { "name": "RAG", "core": true },
+      { "name": "Spring AI" },
+      { "name": "Qdrant" },
+      { "name": "Ollama" }
+    ]
   },
   {
-    "title": "Spring Boot",
-    "imageSrc": "skills/Spring.png"
+    "group": "Frontend",
+    "items": [
+      { "name": "React", "core": true },
+      { "name": "Material UI" },
+      { "name": "Tailwind CSS" },
+      { "name": "SEO" },
+      { "name": "React Helmet" }
+    ]
   },
   {
-    "title": "Node",
-    "imageSrc": "skills/node.png"
+    "group": "Databases",
+    "items": [
+      { "name": "PostgreSQL" , "core": true },
+      { "name": "MS SQL Server" },
+      { "name": "MongoDB" }
+    ]
   },
   {
-    "title": "Express",
-    "imageSrc": "skills/express.png"
-  },{
-    "title": "MongoDB",
-    "imageSrc": "skills/mongodb.png"
-  },
-  {
-    "title": "React",
-    "imageSrc": "skills/react.png"
-  },
-
-  {
-    "title": "PostgreSQL",
-    "imageSrc": "skills/sql.png"
-  },
-  {
-    "title": "HTML",
-    "imageSrc": "skills/html.png"
-  },
-  {
-    "title": "CSS",
-    "imageSrc": "skills/css.png"
-  },
-  {
-    "title": "Tailwind CSS",
-    "imageSrc": "skills/Tailwind CSS.png"
-  },
-  {
-    "title": "C++",
-    "imageSrc": "skills/C++.png"
-  },
-  {
-    "title": "Git",
-    "imageSrc": "skills/Git.png"
-  },
-  {
-    "title": "Kotlin",
-    "imageSrc": "skills/Kotlin.png"
-  },
-  {
-    "title": "Redux",
-    "imageSrc": "skills/Redux.png"
-  },
-  {
-    "title": "Postman",
-    "imageSrc": "skills/Postman.png"
+    "group": "Tools and practices",
+    "items": [
+      { "name": "Git and GitHub" },
+      { "name": "Postman" },
+      { "name": "System design" },
+      { "name": "API versioning" },
+      { "name": "Test-driven development" },
+      { "name": "Agile and SDLC" }
+    ]
   }
 ]

@@ -1,47 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="assets/hero/link-c.jpeg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shubhradeep Maity - Software Engineer</title>
-  
-    <!-- Schema.org Structured Data -->
+
+    <!-- Apply the saved or system theme before first paint to avoid a flash -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "light" && t !== "dark") t = "light";
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
+
+    <title>Shubhradeep Maity | Java and Full Stack Software Engineer</title>
+    <meta
+      name="description"
+      content="Shubhradeep Maity is a full stack software engineer in Kolkata with 2+ years of experience in Java, Spring Boot, Kafka, Camunda, Node.js and React. See his payment, workflow and AI projects."
+    />
+    <meta
+      name="keywords"
+      content="Shubhradeep Maity, Java developer, Spring Boot developer, full stack developer, Kafka, Camunda BPM, React developer, Node.js, RAG, Spring AI, Kolkata"
+    />
+    <meta name="author" content="Shubhradeep Maity" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://shubhradeep-maity-dev-portfolio.vercel.app/" />
+
+    <meta name="theme-color" content="#f1e6cd" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preload" as="image" href="/assets/hero/profile.webp" type="image/webp" />
+
+    <!-- Open Graph and Twitter -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Shubhradeep Maity" />
+    <meta property="og:title" content="Shubhradeep Maity | Java and Full Stack Software Engineer" />
+    <meta
+      property="og:description"
+      content="Payment systems, event-driven workflows and AI assistants built with Java, Spring Boot, Kafka, Camunda and React."
+    />
+    <meta property="og:url" content="https://shubhradeep-maity-dev-portfolio.vercel.app/" />
+    <meta property="og:image" content="https://shubhradeep-maity-dev-portfolio.vercel.app/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Shubhradeep Maity, Java and full stack software engineer" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Shubhradeep Maity | Java and Full Stack Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="Payment systems, event-driven workflows and AI assistants built with Java, Spring Boot, Kafka, Camunda and React."
+    />
+    <meta name="twitter:image" content="https://shubhradeep-maity-dev-portfolio.vercel.app/og-image.png" />
+
+    <!-- Structured data -->
     <script type="application/ld+json">
       {
-        "@context": "https://schema.org/",
-        "@type": "Person",
-        "name": "Shubhradeep Maity",
-        "jobTitle": "Software Developer",
-        "url": "https://shubhradeep-maity-dev-portfolio.vercel.app/",
-        "sameAs": [
-          "https://www.linkedin.com/in/shubhradeepp/",
-          "https://github.com/Shubhradeepp"
-        ],
-        "worksFor": [
+        "@context": "https://schema.org",
+        "@graph": [
           {
-           "@type": "Organization",
-            "name": "Swingbell Labs"
+            "@type": "WebSite",
+            "@id": "https://shubhradeep-maity-dev-portfolio.vercel.app/#website",
+            "url": "https://shubhradeep-maity-dev-portfolio.vercel.app/",
+            "name": "Shubhradeep Maity Portfolio",
+            "inLanguage": "en"
           },
           {
-           "@type": "Organization",
-           "name": "Aryabhata Technologies Private Limited"
-          },
-          {
-            "@type": "Organization",
-            "name": "Bluestock Fintech"
+            "@type": "Person",
+            "@id": "https://shubhradeep-maity-dev-portfolio.vercel.app/#person",
+            "name": "Shubhradeep Maity",
+            "jobTitle": "Full Stack Software Engineer",
+            "description": "Full stack software engineer with 2+ years of experience building applications with Java, Spring Boot, Node.js, React and SQL databases, including a bank-integrated payment system and event-driven Camunda workflows.",
+            "url": "https://shubhradeep-maity-dev-portfolio.vercel.app/",
+            "image": "https://shubhradeep-maity-dev-portfolio.vercel.app/icon-512.png",
+            "email": "mailto:shubhradeepmaity3@gmail.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Kolkata",
+              "addressRegion": "West Bengal",
+              "addressCountry": "IN"
+            },
+            "worksFor": { "@type": "Organization", "name": "Caerus IT Consulting Pvt. Ltd." },
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Netaji Subhash Engineering College"
+            },
+            "sameAs": [
+              "https://www.linkedin.com/in/shubhradeepp/",
+              "https://github.com/Shubhradeepp"
+            ],
+            "knowsAbout": [
+              "Java", "Spring Boot", "Apache Kafka", "Camunda BPM", "Node.js", "React",
+              "TypeScript", "PostgreSQL", "REST APIs", "Retrieval-augmented generation",
+              "Spring AI", "Workflow orchestration", "System design"
+            ]
           }
-        ],
-
-        "knowsAbout": [
-        "React","Node.js", "Java", "Spring Boot", "Express.js", "JavaScript", "TypeScript", "HTML", "CSS", "Bootstrap", "Material UI", "Tailwind CSS", "MySQL", "MongoDB", "PostgreSQL", "Kotlin" 
         ]
       }
     </script>
   </head>
-  
-  <body>
-    <div id="root"></div>
+
+  <body style="background: #f1e6cd">
+    <div id="root">
+      <!-- Replaced by React on load. Gives crawlers and slow connections real content. -->
+      <main style="max-width: 640px; margin: 15vh auto; padding: 0 24px; font-family: &quot;Courier New&quot;, monospace; line-height: 1.6; color: #2b1a12">
+        <h1>Shubhradeep Maity, Java and full stack software engineer</h1>
+        <p>
+          2+ years of experience with Java, Spring Boot, Kafka, Camunda BPM, Node.js and React.
+          Built a bank-integrated payment system, event-driven workflow middleware and an AI
+          knowledge assistant. Based in Kolkata, India.
+        </p>
+        <p>
+          <a href="mailto:shubhradeepmaity3@gmail.com">shubhradeepmaity3@gmail.com</a> ·
+          <a href="https://www.linkedin.com/in/shubhradeepp/">LinkedIn</a> ·
+          <a href="https://github.com/Shubhradeepp">GitHub</a>
+        </p>
+      </main>
+    </div>
+    <noscript>This portfolio needs JavaScript to show the full page. My resume is available at /Shubhradeep_Maity_Resume.pdf.</noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
