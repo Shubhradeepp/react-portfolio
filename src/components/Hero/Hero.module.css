@@ -222,3 +222,58 @@
     font-size: clamp(3.4rem, 5.9vw, 5.5rem);
   }
 }
+/* ---------- Mobile / tablet: big photo first, left aligned, smaller text ---------- */
+@media (max-width: 959px) {
+  .grid {
+    gap: 24px;
+  }
+
+  /* Photo discs first, full width of the screen */
+  .stage {
+    order: -1;
+    width: 100%;
+    max-width: 560px;
+  }
+
+  /* Smaller text, left aligned (no text-align / auto margins needed) */
+  .place {
+    display: none;
+  }
+
+  .name {
+    text-shadow: 3px 3px 0 var(--mustard);
+  }
+  .what {
+    margin-top: 14px;
+    font-size: clamp(1.1rem, 4.2vw, 1.5rem);
+  }
+  .lead {
+    margin-top: 16px;
+    font-size: 0.92rem;
+  }
+
+  /* Buttons: full width, easy to tap */
+  .cta {
+    gap: 12px;
+    margin-top: 24px;
+  }
+  .cta :global(.btn) {
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+  .social {
+    margin-top: 24px;
+  }
+
+  /* Sticker a bit smaller so it doesn't cover the portrait */
+  .sticker {
+    max-width: 140px;
+    padding: 8px 10px;
+  }
+  .sticker strong {
+    font-size: 1.7rem;
+  }
+  .sticker span {
+    font-size: 0.65rem;
+  }
+}

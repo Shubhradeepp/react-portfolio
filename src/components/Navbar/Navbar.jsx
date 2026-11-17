@@ -66,7 +66,7 @@ export const Navbar = () => {
             <DownloadIcon width={18} height={18} />
             Resume
           </a>
-          {/* <ThemeToggle theme={theme} onToggle={toggleTheme} />
+          {/* <ThemeToggle theme={theme} onToggle={toggleTheme} /> */}
           <button
             type="button"
             className={styles.menuBtn}
@@ -76,7 +76,7 @@ export const Navbar = () => {
             onClick={() => setOpen((o) => !o)}
           >
             {open ? <CloseIcon /> : <MenuIcon />}
-          </button> */}
+          </button>
         </div>
       </nav>
 
